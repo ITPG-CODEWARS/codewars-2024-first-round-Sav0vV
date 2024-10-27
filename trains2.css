@@ -1,0 +1,144 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #111;
+    padding: 10px 0;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #6290aa; /* Accent color on hover */
+    background-color: rgba(0, 70, 92, 0.342); /* Subtle hover effect */
+    border-radius: 4px;
+}
+nav ul li a:hover, nav ul li a.active {
+    color: #7aa9ff;
+}
+/* Train Listing Styles */
+main {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+#train-list h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #6290aa;
+}
+
+/* Train Grid */
+.train-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Train Card Styles */
+.train-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.train-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.train-card h3 {
+    font-size: 1.5rem;
+    color: #6290aa;
+    margin-bottom: 10px;
+}
+
+.train-card p {
+    font-size: 1.5rem;
+    color: #79b3e9;
+    margin-bottom: 20px;
+}
+
+.train-card .btn {
+    background-color: #6290aa;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.train-card .btn:hover {
+    background-color: #6290aa;
+}
+
+.train-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111;
+    color: #fff;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+footer a {
+    color: #4a6e8b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

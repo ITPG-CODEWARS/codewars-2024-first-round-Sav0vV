@@ -1,0 +1,221 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header {
+    background-color: #111;
+    padding: 10px 0;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+}
+
+/* Navbar Styles */
+header {
+    background-color: #111;
+    padding: 13px 0;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #6290aa; /* Accent color on hover */
+    background-color: rgba(0, 70, 92, 0.342); /* Subtle hover effect */
+    border-radius: 4px;
+}
+nav ul li a:hover, nav ul li a.active {
+    color: #7aa9ff;
+}
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#train-details {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.train-header h1 {
+    color: #6290aa;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.train-header p {
+    color: #073d5c;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.train-gallery {
+    display: flex;
+    gap: 1rem;
+    overflow: auto;
+    margin-bottom: 1.5rem;
+}
+
+.train-gallery img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.train-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.train-description {
+    margin-bottom: 1.5rem;
+}
+
+.train-description h2 {
+    color: #437da3;
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
+}
+
+.train-description p,
+.train-description ul {
+    font-size: 1.4rem;
+    color: #2f81a7;
+    line-height: 1.6;
+}
+
+.train-description ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.train-description ul li {
+    margin-bottom: 0.5rem;
+}
+
+.train-specifications {
+    background-color: #fafafa;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.train-specifications h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.train-specifications table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.train-specifications th,
+.train-specifications td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    color: #666;
+}
+
+.train-specifications th {
+    text-align: left;
+    color: #333;
+    font-weight: 500;
+}
+/* Bottom Info Button Styles */
+.bottom-info-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.bottom-info-button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bottom-info-button:hover {
+    background-color: #6290aa; /* Gold color on hover */
+    transform: translateY(-3px); /* Hover lift effect */
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111;
+    color: #fff;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+footer a {
+    color: #4a6e8b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

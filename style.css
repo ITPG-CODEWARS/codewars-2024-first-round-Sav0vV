@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background for clean feel */
+    color: #333;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #111;
+    padding: 10px 0;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #6290aa;
+    background-color: rgba(0, 70, 92, 0.342);
+    border-radius: 4px;
+}
+nav ul li a:hover, nav ul li a.active {
+    color: #7aa9ff;
+}
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 100px auto 40px auto;
+}
+
+/* Home Section */
+#home {
+    background: url('banner.png') no-repeat center center/cover;
+    color: #fff;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 55, 78, 0.582); /* Overlay for better text readability */
+    padding: 60px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 1200px;
+}
+
+#home h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+    z-index: 1; /* Keep text above overlay */
+}
+#home h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgb(255, 255, 255); /* Subtle shadow for text */
+    z-index: 1; /* Keep text above overlay */
+}
+
+
+#home p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+/* About Section */
+#about, #services, #contact {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Modern shadow for depth */
+    max-width: 1000px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about:hover, #services:hover, #contact:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2); /* Elevate on hover */
+}
+
+h2 {
+    text-align: center;
+    color: #111;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Section Paragraphs */
+p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111;
+    color: #fff;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+footer a {
+    color: #4a6e8b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+/* New Trains Section */
+#new-trains {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#new-trains h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.train-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.train-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.train-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.train-card h3 {
+    font-size: 1.5rem;
+    color: #4a6e8b;
+    margin-bottom: 15px;
+}
+
+.train-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.train-card .btn {
+    background-color: #4a6e8b;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.train-card .btn:hover {
+    background-color: #15c79b;
+}
+
+.train-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}

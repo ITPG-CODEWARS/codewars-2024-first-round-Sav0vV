@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакт</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="icon" href="snimki/noblogo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="trains2.html">Влакове</a></li>
+                <li><a href="trains.html">Описание на влакове</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html" class="active">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-us">
+            <h1>Контакти</h1>
+
+            <div class="contact-grid">
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Свържете се с нас</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Две имена</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email адрес</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Съобщение</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" href="contacts.html" class="btn">Изпрати</button>
+                    </form>
+                </div>
+
+                <!-- Contact Details and Social Links -->
+                <div class="contact-details">
+                    <h2>Информация за контакт</h2>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:cvetomirsavov2009@gmail.com" target = "_blank">vlakovsvqt@help.vs</a></li>
+                        <li><strong>Телефон:</strong>+359896212350</li>
+                    </ul>
+                    <h2>Последвайте ни</h2>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com" target="_blank"><img src="snimki/facebook.png" height = 20px>  facebook.com/vlakovsvqt</a></li>
+                        <li><a href="https://instagram.com" target="_blank"><img src="snimki/instagram.png" height = 20px>  instagram.com/vlakovsvqt</a></li>
+                        <li><a href="https://x.com" target="_blank"><img src="snimki/x.png" height = 20px>  X.com/vlakovsvqt</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Влаков Свят. All rights reserved.</p>
+        <br>
+        <a href="mailto:cvetomirsavov2009@gmail.com" target = "_blank">Email me</a>
+    </footer>
+</body>
+</html>
