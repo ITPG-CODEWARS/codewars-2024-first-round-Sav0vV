@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+header {
+    background-color: #111;
+    padding: 10px 0;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #6290aa;
+    background-color: rgba(0, 70, 92, 0.342);
+    border-radius: 4px;
+}
+nav ul li a:hover, nav ul li a.active {
+    color: #7aa9ff;
+}
+/* Bottom Info Button Styles */
+.bottom-info-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.bottom-info-button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bottom-info-button:hover {
+    background-color: #6290aa; /* Gold color on hover */
+    transform: translateY(-3px); /* Hover lift effect */
+}
+/* Train Details Page */
+#train-full-details {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.train-header h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.train-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Train Gallery */
+.train-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.train-gallery img {
+    width: calc(33.333% - 1rem);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.train-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Description and Specifications */
+.train-description {
+    margin-top: 2rem;
+}
+
+.train-description h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.train-description p,
+.train-description ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.train-description ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.train-specifications {
+    margin-top: 2rem;
+}
+
+.train-specifications h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.train-specifications table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.train-specifications th,
+.train-specifications td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.train-specifications th {
+    font-weight: 600;
+    color: #444;
+}
+
+.train-specifications td {
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111;
+    color: #fff;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+footer a {
+    color: #4a6e8b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

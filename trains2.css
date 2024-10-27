@@ -98,12 +98,12 @@ main {
 
 .train-card p {
     font-size: 1.5rem;
-    color: #79b3e9;
+    color: #141d25;
     margin-bottom: 20px;
 }
 
 .train-card .btn {
-    background-color: #6290aa;
+    background-color: #333;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
