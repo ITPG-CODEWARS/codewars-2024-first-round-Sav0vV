@@ -6,12 +6,7 @@ body {
     background-color: #f4f4f9;
 }
 
-header {
-    background-color: #333;
-    padding: 1rem;
-    text-align: center;
-}
-
+/* Header */
 header {
     background-color: #111;
     padding: 10px 0;
@@ -20,7 +15,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -55,7 +50,8 @@ nav ul li a:hover {
 nav ul li a:hover, nav ul li a.active {
     color: #7aa9ff;
 }
-/* Bottom Info Button Styles */
+
+/* Bottom Info Button */
 .bottom-info-button-container {
     display: flex;
     justify-content: center;
@@ -74,9 +70,10 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .bottom-info-button:hover {
-    background-color: #6290aa; /* Gold color on hover */
-    transform: translateY(-3px); /* Hover lift effect */
+    background-color: #6290aa;
+    transform: translateY(-3px);
 }
+
 /* Train Details Page */
 #train-full-details {
     max-width: 1200px;
@@ -171,6 +168,7 @@ nav ul li a:hover, nav ul li a.active {
     color: #555;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 40px 20px;
@@ -191,4 +189,65 @@ footer a {
 footer a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    #train-full-details {
+        padding: 20px;
+    }
+
+    .train-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .train-header p {
+        font-size: 1rem;
+    }
+
+    .train-gallery {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .train-gallery img {
+        width: 100%;
+    }
+
+    .train-description h2,
+    .train-specifications h2 {
+        font-size: 1.2rem;
+    }
+
+    .train-description p,
+    .train-description ul,
+    .train-specifications th,
+    .train-specifications td {
+        font-size: 0.9rem;
+    }
+
+    .bottom-info-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
 }

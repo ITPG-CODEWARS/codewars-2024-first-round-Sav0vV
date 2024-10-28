@@ -11,28 +11,24 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-}
-
-header {
-    background-color: #111;
-    padding: 10px 0;
     position: fixed; 
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar Styles */
+/* Navbar */
 header {
     background-color: #111;
-    padding: 13px 0;
+    padding: 10px 0;
     position: fixed; 
     width: 100%;
     top: 0;
@@ -175,7 +171,8 @@ main {
     color: #333;
     font-weight: 500;
 }
-/* Bottom Info Button Styles */
+
+/* Bottom Info Button */
 .bottom-info-button-container {
     display: flex;
     justify-content: center;
@@ -194,9 +191,10 @@ main {
 }
 
 .bottom-info-button:hover {
-    background-color: #6290aa; /* Gold color on hover */
-    transform: translateY(-3px); /* Hover lift effect */
+    background-color: #6290aa;
+    transform: translateY(-3px);
 }
+
 /* Footer */
 footer {
     text-align: center;
@@ -218,4 +216,61 @@ footer a {
 footer a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 80px 10px;
+    }
+    .train-header h1 {
+        font-size: 1.5rem;
+    }
+    .train-header p {
+        font-size: 1.2rem;
+    }
+
+    .train-gallery img {
+        max-width: 100%;
+    }
+
+    .train-description h2 {
+        font-size: 1.5rem;
+    }
+    .train-description p,
+    .train-description ul {
+        font-size: 1.2rem;
+    }
+
+    .train-specifications h2 {
+        font-size: 1.2rem;
+    }
+    .train-specifications th,
+    .train-specifications td {
+        font-size: 0.9rem;
+    }
+
+    .bottom-info-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+    footer a {
+        font-size: 0.9rem;
+    }
 }

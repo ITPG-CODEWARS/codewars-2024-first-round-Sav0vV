@@ -16,7 +16,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -44,13 +44,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #6290aa; /* Accent color on hover */
-    background-color: rgba(0, 70, 92, 0.342); /* Subtle hover effect */
+    color: #6290aa;
+    background-color: rgba(0, 70, 92, 0.342);
     border-radius: 4px;
 }
+
 nav ul li a:hover, nav ul li a.active {
     color: #7aa9ff;
 }
+
 /* Main Content Styles */
 main {
     padding: 100px 20px;
@@ -184,4 +186,63 @@ footer a {
 footer a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+        /* Navbar: Smaller padding and font size */
+        header {
+            padding: 5px 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            padding: 8px 10px;
+               font-size: 12px;
+    #contact-us h1 {
+        font-size: 2rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .contact-form, .contact-details {
+        padding: 20px;
+    }
+
+    .contact-form button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 30px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-us h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form, .contact-details {
+        padding: 15px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
 }

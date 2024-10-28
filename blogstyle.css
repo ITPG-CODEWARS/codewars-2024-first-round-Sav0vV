@@ -11,14 +11,7 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-/* Navbar Styles */
+/* Header */
 header {
     background-color: #111;
     padding: 13px 0;
@@ -27,7 +20,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -55,13 +48,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #6290aa; /* Accent color on hover */
-    background-color: rgba(0, 70, 92, 0.342); /* Subtle hover effect */
+    color: #6290aa;
+    background-color: rgba(0, 70, 92, 0.342);
     border-radius: 4px;
 }
 nav ul li a:hover, nav ul li a.active {
     color: #7aa9ff;
 }
+
 /* Main Content */
 main {
     max-width: 1200px;
@@ -79,6 +73,7 @@ main {
 h1 {
     color: #333;
     margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 .blog-post {
@@ -125,4 +120,52 @@ footer {
     padding: 30px 0;
     background-color: #111;
     color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    /* Main Content Area */
+    main {
+        padding: 0 1rem;
+    }
+
+    #blog-posts {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.2rem;
+    }
+
+    .blog-post {
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Read More Button */
+    .read-more {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+        font-size: 0.8rem;
+    }
 }

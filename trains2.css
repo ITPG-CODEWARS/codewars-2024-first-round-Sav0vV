@@ -52,6 +52,7 @@ nav ul li a:hover {
 nav ul li a:hover, nav ul li a.active {
     color: #7aa9ff;
 }
+
 /* Train Listing Styles */
 main {
     padding: 100px 20px;
@@ -120,6 +121,7 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
+
 /* Footer */
 footer {
     text-align: center;
@@ -141,4 +143,52 @@ footer a {
 footer a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+/* Responsive Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    
+    main {
+        padding: 80px 10px;
+    }
+
+    /* Title Font Size */
+    #train-list h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    /* Train Card Adjustments */
+    .train-card {
+        padding: 15px;
+    }
+    .train-card h3 {
+        font-size: 1.25rem;
+    }
+    .train-card p {
+        font-size: 1.2rem;
+    }
+    .train-card .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer Font Size */
+    footer {
+        padding: 30px 10px;
+        font-size: 0.8rem;
+    }
+    footer a {
+        font-size: 0.9rem;
+    }
 }

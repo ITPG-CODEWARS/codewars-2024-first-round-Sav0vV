@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9; /* Light background for clean feel */
+    background-color: #f9f9f9; 
     color: #333;
 }
 
@@ -17,7 +17,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 nav ul {
@@ -49,9 +49,11 @@ nav ul li a:hover {
     background-color: rgba(0, 70, 92, 0.342);
     border-radius: 4px;
 }
+
 nav ul li a:hover, nav ul li a.active {
     color: #7aa9ff;
 }
+
 /* Main Content */
 main {
     padding: 20px;
@@ -80,7 +82,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(39, 55, 78, 0.582); /* Overlay for better text readability */
+    background-color: rgba(39, 55, 78, 0.582); 
     padding: 60px 20px;
     margin: 20px auto;
     border-radius: 12px;
@@ -91,17 +93,16 @@ main {
     font-size: 4rem;
     font-weight: 700;
     text-transform: uppercase;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
-    z-index: 1; /* Keep text above overlay */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    z-index: 1; 
 }
 #home h2 {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    text-shadow: 0 2px 4px rgb(255, 255, 255); /* Subtle shadow for text */
-    z-index: 1; /* Keep text above overlay */
+    text-shadow: 0 2px 4px rgb(255, 255, 255);
+    z-index: 1; 
 }
-
 
 #home p {
     font-size: 1.2rem;
@@ -116,14 +117,14 @@ main {
     padding: 60px 20px;
     margin: 20px auto;
     border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Modern shadow for depth */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #about:hover, #services:hover, #contact:hover {
-    transform: translateY(-5px); /* Subtle hover effect */
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2); /* Elevate on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -143,6 +144,7 @@ p {
     line-height: 1.8;
     margin-bottom: 40px;
 }
+
 /* Footer */
 footer {
     text-align: center;
@@ -160,11 +162,11 @@ footer a {
     font-size: 1rem;
     transition: color 0.3s ease;
 }
-
 footer a:hover {
     color: #fff;
     text-decoration: underline;
 }
+
 /* New Trains Section */
 #new-trains {
     padding: 60px 20px;
@@ -229,4 +231,90 @@ footer a:hover {
 .train-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    #home h2 {
+        font-size: 1.5rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            padding: 5px 0; 
+        }
+    
+        nav ul li {
+            margin: 0 10px;
+        }
+    
+        nav ul li a {
+            padding: 8px 10px; 
+            font-size: 12px; 
+        }
+    }
+
+    #about, #services, #contact, #new-trains {
+        padding: 40px 10px;
+        margin: 10px auto;
+    }
+
+    .train-cards {
+        flex-direction: column;
+    }
+
+    .train-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        height: 400px;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home h2 {
+        font-size: 1.2rem;
+    }
+
+    #home p {
+        font-size: 0.9rem;
+    }
+
+    nav ul li a {
+        font-size: 6px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
 }
